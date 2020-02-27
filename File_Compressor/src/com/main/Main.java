@@ -38,17 +38,17 @@ public static void main(String[] args) throws IOException {
 	System.out.println(" A : to compress");
 	System.out.println(" B : to Decompress");
 	System.out.println(" C : to EXIT");
-	cmd=sc.next();
+	cmd=sc.nextLine();
     if(cmd.equals("A"))
     {
     	System.out.println("Enter file Path to compress");
-    			Compressor.compress(new File(sc.next()));
+    			Compressor.compress(new File(sc.nextLine()));
     	
     }
     else if(cmd.equals("B"))
     {
     	System.out.println("Enter file Path to Decompress");
-    			Decompressor.decompress(new File(sc.next()));
+    			Decompressor.decompress(new File(sc.nextLine()));
     	
     }
     else if(cmd.equals("C"))
